@@ -139,9 +139,6 @@ export default {
         };
     },
 
-    // created() {
-    //     this.getAllCartItem();
-    // },
 
     mounted() {
         this.getAllCartItem();

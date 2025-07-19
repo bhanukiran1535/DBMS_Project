@@ -1,4 +1,4 @@
-// import connection
+
 import db from "../config/database.js";
 
 // get all items by user id

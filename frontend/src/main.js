@@ -6,4 +6,3 @@ import '@/axios'
 
 createApp(App).use(router).use(store).mount('#app')
 
-// npm install vue-router

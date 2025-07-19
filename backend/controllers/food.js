@@ -1,4 +1,4 @@
-// import functions from Food model
+
 
 import {
     getFoods,

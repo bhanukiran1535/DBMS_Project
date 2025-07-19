@@ -1,4 +1,4 @@
-// import connection
+
 import db from "../config/database.js";
 
 // insert Bill Details

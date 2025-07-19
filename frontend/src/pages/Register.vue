@@ -43,26 +43,6 @@
                     <p class="error-mess" v-if="errorObj.phoneErr.length > 0">{{ errorObj.phoneErr[0] }}</p>
                 </div>
 
-                <!-- <div class="form-group">
-                    <label for="uBirth">Enter your birthday:
-                    </label>
-                    <input type="date" name="uBirth" id="uBirth" class="form-control" @click="availableTime()"
-                        v-model="registerObj.birth"/>
-                    <p class="error-mess" v-if="errorObj.birthErr.length > 0">{{ errorObj.birthErr[0] }}</p>
-                </div>
-
-                <div class="form-group">
-                    <label for="">Select your gender:
-                    </label>
-                    <div class="form-group">
-                        <input type="radio" name="gender" value="male" id="genderMale"
-                            v-model="registerObj.gender" /><span>Male</span>
-                        <input type="radio" name="gender" value="female" id="genderFemale"
-                            v-model="registerObj.gender" /><span>Female</span>
-                    </div>
-                    <p class="error-mess" v-if="errorObj.genderErr.length > 0">{{ errorObj.genderErr[0] }}</p>
-                </div> -->
-
                 <div class="form-group">
                     <input type="submit" value="join us" class="btn" />
                     <p>have an account? <router-link @click="ToTop()" to="/login">login</router-link>
@@ -190,31 +170,6 @@ export default {
                     this.errorObj.phoneErr.push('Phone numbers can only contain numbers');
                 }
             }
-
-            // // Birth validate
-            // if (!this.registerObj.birth) {
-            //     this.errorObj.birthErr.push("Entering birthday is required");
-            // }
-            // else {
-            //     let minRange = document.getElementById("uBirth").getAttribute("min");
-            //     let maxRange = document.getElementById("uBirth").getAttribute("max");
-            //     let dateMin = new Date(minRange);
-            //     let dateMax = new Date(maxRange);
-            //     let dateInput = new Date(this.registerObj.birth);
-
-            //     if (dateInput === "Invalid Date") {
-            //         this.errorObj.birthErr.push("Invalid date input");
-            //     }
-
-            //     if (dateInput.getTime() < dateMin.getTime() || dateInput.getTime() > dateMax.getTime()) {
-            //         this.errorObj.birthErr.push("Available birthday range is from pass 150 years to now");
-            //     }
-            // }
-
-            // // Gender validate
-            // if (!this.registerObj.gender) {
-            //     this.errorObj.genderErr.push("Please select a gender");
-            // }
         },
 
         async handleSubmit(e) {
